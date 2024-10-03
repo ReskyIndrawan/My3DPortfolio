@@ -1,0 +1,41 @@
+{
+  "navbar": {
+    "logo": "Indrawan",
+    "home": "home",
+    "about": "about",
+    "work": "work",
+    "contact": "contact"
+  },
+  "hero": {
+    "title": "Hi, I'm Resky Indrawan",
+    "subtitle": "Building Products & Brands",
+    "button": "Let's work together"
+  },
+  "about": {
+    "title1": "Hi, I'm Resky Indrawan",
+    "subtitle1": "With 3 years of experience IT web deeveloper self taught, i have honed my skills in frontend and backend development, with focus programming language javascript with frontend framework using react.js or next.js and backend framework using node.js and express.js",
+    "title2": "Tech Stack",
+    "subtitle2": "I specialize in javascript/typescipt with a focus on react and next.js ecosystem",
+    "title3": "I can work remotly across most timezones, and especially work on-site in japan",
+    "subtitle3": "I am a team player and I am always willing to learn new things and try new things",
+    "button": "Get in touch",
+    "title4": "My Passion for Coding",
+    "subtitle4": "I love solving problems and building things throught code. Coding isn't just my profession - it is my passion",
+    "link": "Contact Me",
+    "email": "Indrawanresky.tlg@gmail.com"
+  },
+  "testimonial": {
+    "title": "Hear from My Clients"
+  },
+  "experience": {
+    "title": "My Work Experience"
+  },
+  "contact": {
+    "title": "Let's talk",
+    "subtitle": "Whether you're looking to build a new website, improve your existing platform, or bring a unique project to life, i'm here to help.",
+    "fullName": "Full Name",
+    "email": "Email adsress",
+    "message": "Your message",
+    "button": "Send Message"
+  }
+}
