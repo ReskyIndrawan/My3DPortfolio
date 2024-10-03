@@ -1,4 +1,3 @@
-import { div } from "three/webgpu";
 import { clientReviews } from "../constans";
 
 const Clients = () => {
