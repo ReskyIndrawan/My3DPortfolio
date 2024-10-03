@@ -1,6 +1,5 @@
 import { PerspectiveCamera } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import { Leva, useControls } from "leva";
 import { Suspense } from "react";
 import { useMediaQuery } from "react-responsive";
 
@@ -72,29 +71,17 @@ const Hero = () => {
       </div>
 
       <div className='w-full h-full absolute inset-0'>
-        {/* <Leva /> */}
         <Canvas className='w-full h-full'>
           <Suspense fallback={<CanvasLoader />}>
             <PerspectiveCamera makeDefault position={[0, 0, 20]} />
 
-            <HeroCamera isMobile={isMobile}>
+            {/* <HeroCamera isMobile={isMobile}>
               <HackerRoom
                 scale={sizes.deskScale}
                 position={[1.9, -7, -3.7]}
                 rotation={[0.2, -3.2, 0]}
-                // position={[
-                //   controls.positionX,
-                //   controls.positionY,
-                //   controls.positionZ,
-                // ]}
-                // rotation={[
-                //   controls.rotationX,
-                //   controls.rotationY,
-                //   controls.rotationZ,
-                // ]}
-                // scale={[controls.scale, controls.scale, controls.scale]}
               />
-            </HeroCamera>
+            </HeroCamera> */}
 
             <group>
               <Target position={sizes.targetPosition} />
