@@ -1,7 +1,5 @@
 import { useState } from "react";
 import { navLinks } from "../constans";
-import Translation from "../components/Translation";
-import { useTranslation } from "react-i18next";
 
 const NavItems = () => {
   return (
@@ -22,12 +20,6 @@ const Navbar = () => {
 
   const toggleMenu = () => setIsOpen((prev) => !prev);
 
-  const [t, i18n] = useTranslation("global");
-
-  const handleChangeLanguage = (lang) => {
-    i18n.changeLanguage(lang);
-  };
-
   return (
     <header className='fixed top-0 left-0 right-0 z-50 bg-black/90'>
       <div className='max-w-7xl mx-auto'>
@@ -40,18 +32,9 @@ const Navbar = () => {
               alt='logo'
               className='w-10 h-10'
             />
-            <p>{t("navbar.logo")}</p>
+            <p>Indrawan</p>
           </a>
-          {/* <button
-            className='w-5 h-5 border rounded-lg text-white bg-black-300'
-            onClick={() => handleChangeLanguage("en")}>
-            en
-          </button>
-          <button
-            className='w-5 h-5 border rounded-lg text-white bg-black-300'
-            onClick={() => handleChangeLanguage("jp")}>
-            jp
-          </button> */}
+
           <button
             onClick={toggleMenu}
             className='text-netural-400 hover:text-white focus:outline-none sm:hidden flex'
