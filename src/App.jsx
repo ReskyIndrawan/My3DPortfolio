@@ -10,7 +10,6 @@ import Experience from "./sections/Experience";
 import global_en from "./translations/en/global.json";
 import global_jp from "./translations/jp/global.json";
 import i18next from "i18next";
-import { I18nextProvider } from "react-i18next";
 
 i18next.init({
   interpolation: { escapeValue: false },
@@ -26,18 +25,16 @@ i18next.init({
 });
 const App = () => {
   return (
-    <I18nextProvider i18n={i18next}>
-      <main className='max-w-7xl mx-auto relative'>
-        <Navbar />
-        <Hero />
-        <About />
-        <Projects />
-        <Clients />
-        <Experience />
-        <Contact />
-        <Footer />
-      </main>
-    </I18nextProvider>
+    <main className='max-w-7xl mx-auto relative'>
+      <Navbar />
+      <Hero />
+      <About />
+      <Projects />
+      <Clients />
+      <Experience />
+      <Contact />
+      <Footer />
+    </main>
   );
 };
 
