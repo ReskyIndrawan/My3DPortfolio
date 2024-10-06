@@ -1,13 +1,16 @@
 import { useState } from "react";
 import { navLinks } from "../constans";
+import { useTranslation } from "react-i18next";
+import DropDown from "../components/DropDown";
 
 const NavItems = () => {
+  const { t } = useTranslation();
   return (
     <ul className='nav-ul'>
       {navLinks.map(({ id, href, name }) => (
         <li key={id} className='nav-li'>
           <a href={href} className='nav-link_a' onClick={() => {}}>
-            {name}
+            {t(name)}
           </a>
         </li>
       ))}
@@ -17,6 +20,7 @@ const NavItems = () => {
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { t } = useTranslation();
 
   const toggleMenu = () => setIsOpen((prev) => !prev);
 
@@ -32,8 +36,10 @@ const Navbar = () => {
               alt='logo'
               className='w-10 h-10'
             />
-            <p>Indrawan</p>
+            <p>{t("navbar.logo")}</p>
           </a>
+
+          <DropDown />
 
           <button
             onClick={toggleMenu}

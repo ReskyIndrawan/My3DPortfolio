@@ -3,9 +3,11 @@ import { useRef, useState } from "react";
 
 import useAlert from "../hooks/useAlert.js";
 import Alert from "../components/Alert.jsx";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
   const formRef = useRef();
+  const { t } = useTranslation();
 
   const { alert, showAlert, hideAlert } = useAlert();
   const [loading, setLoading] = useState(false);
@@ -30,9 +32,9 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Resky Indrawan",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "indrawanresky.tlg@gmail.com",
           message: form.message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
@@ -42,7 +44,7 @@ const Contact = () => {
           setLoading(false);
           showAlert({
             show: true,
-            text: "Thank you for your message 😃",
+            text: t("alert.200"),
             type: "success",
           });
 
@@ -61,7 +63,7 @@ const Contact = () => {
 
           showAlert({
             show: true,
-            text: "I didn't receive your message 😢",
+            text: t("alert.400"),
             type: "danger",
           });
         }
@@ -80,11 +82,9 @@ const Contact = () => {
         /> */}
 
         <div className='contact-container'>
-          <h3 className='head-text'>Let's talk</h3>
+          <h3 className='head-text'>{t("contact.title")}</h3>
           <p className='text-lg text-white-600 mt-3'>
-            Whether you’re looking to build a new website, improve
-            your existing platform, or bring a unique project to life,
-            I’m here to help.
+            {t("contact.subTitle")}
           </p>
 
           <form
@@ -92,7 +92,9 @@ const Contact = () => {
             onSubmit={handleSubmit}
             className='mt-12 flex flex-col space-y-7'>
             <label className='space-y-3'>
-              <span className='field-label'>Full Name</span>
+              <span className='field-label'>
+                {t("contact.content.fullName")}
+              </span>
               <input
                 type='text'
                 name='name'
@@ -105,7 +107,9 @@ const Contact = () => {
             </label>
 
             <label className='space-y-3'>
-              <span className='field-label'>Email address</span>
+              <span className='field-label'>
+                {t("contact.content.email")}
+              </span>
               <input
                 type='email'
                 name='email'
@@ -118,7 +122,9 @@ const Contact = () => {
             </label>
 
             <label className='space-y-3'>
-              <span className='field-label'>Your message</span>
+              <span className='field-label'>
+                {t("contact.content.message")}
+              </span>
               <textarea
                 name='message'
                 value={form.message}
@@ -134,7 +140,9 @@ const Contact = () => {
               className='field-btn'
               type='submit'
               disabled={loading}>
-              {loading ? "Sending..." : "Send Message"}
+              {loading
+                ? t("contact.content.button.sending")
+                : t("contact.content.button.idle")}
 
               <img
                 src='/assets/arrow-up.png'

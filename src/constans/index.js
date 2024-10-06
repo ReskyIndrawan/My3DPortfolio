@@ -1,22 +1,22 @@
 export const navLinks = [
   {
     id: 1,
-    name: "Home",
+    name: "navbar.home",
     href: "#home",
   },
   {
     id: 2,
-    name: "About",
+    name: "navbar.about",
     href: "#about",
   },
   {
     id: 3,
-    name: "Work",
+    name: "navbar.work",
     href: "#work",
   },
   {
     id: 4,
-    name: "Contact",
+    name: "navbar.contact",
     href: "#contact",
   },
 ];
@@ -58,10 +58,9 @@ export const clientReviews = [
 
 export const myProjects = [
   {
-    title: "Podcastr - AI Podcast Platform",
-    desc: "Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.",
-    subdesc:
-      "Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.",
+    title: "myProject.project1.title",
+    desc: "myProject.project1.desc",
+    subdesc: "myProject.project1.subdesc",
     href: "https://www.youtube.com/watch?v=zfAb95tJvZQ",
     texture: "/textures/project/project1.mp4",
     logo: "/assets/project-logo1.png",
@@ -95,10 +94,9 @@ export const myProjects = [
     ],
   },
   {
-    title: "LiveDoc - Real-Time Google Docs Clone",
-    desc: "LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.",
-    subdesc:
-      "With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.",
+    title: "myProject.project2.title",
+    desc: "myProject.project2.desc",
+    subdesc: "myProject.project2.subdesc",
     href: "https://www.youtube.com/watch?v=y5vE8y_f_OM",
     texture: "/textures/project/project2.mp4",
     logo: "/assets/project-logo2.png",
@@ -132,10 +130,9 @@ export const myProjects = [
     ],
   },
   {
-    title: "CarePulse - Health Management System",
-    desc: "An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.",
-    subdesc:
-      "With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.",
+    title: "myProject.project3.title",
+    desc: "myProject.project3.desc",
+    subdesc: "myProject.project3.subdesc",
     href: "https://www.youtube.com/watch?v=lEflo_sc82g",
     texture: "/textures/project/project3.mp4",
     logo: "/assets/project-logo3.png",
@@ -171,10 +168,9 @@ export const myProjects = [
     ],
   },
   {
-    title: "Horizon - Online Banking Platform",
-    desc: "Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.",
-    subdesc:
-      "Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.",
+    title: "myProject.project4.title",
+    desc: "myProject.project4.desc",
+    subdesc: "myProject.project4.subdesc",
     href: "https://www.youtube.com/watch?v=PuOVqP_cjkE",
     texture: "/textures/project/project4.mp4",
     logo: "/assets/project-logo4.png",
@@ -208,10 +204,9 @@ export const myProjects = [
     ],
   },
   {
-    title: "Imaginify - AI Photo Manipulation App",
-    desc: "Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.",
-    subdesc:
-      "Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.",
+    title: "myProject.project5.title",
+    desc: "myProject.project5.desc",
+    subdesc: "myProject.project5.subdesc",
     href: "https://www.youtube.com/watch?v=Ahwoks_dawU",
     texture: "/textures/project/project5.mp4",
     logo: "/assets/project-logo5.png",
@@ -284,30 +279,28 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 export const workExperiences = [
   {
     id: 1,
-    name: "Staff Service Engineer",
-    pos: "IT Web Developer",
-    duration: "2024 - Present",
-    title:
-      "Assigned to customer company to solve problems as IT web developer.",
+    name: "workExperience.experience1.name",
+    pos: "workExperience.experience1.pos",
+    duration: "workExperience.experience1.duration",
+    title: "workExperience.experience1.title",
     icon: "/assets/sse.png",
     animation: "victory",
   },
   {
     id: 2,
-    name: "Koyosangyo",
-    pos: "Heat Treatment Engineer",
-    duration: "2021 - 2024",
-    title:
-      "Carrying out heat treatment process on customer products under conditions determined by both parties.",
+    name: "workExperience.experience2.name",
+    pos: "workExperience.experience2.pos",
+    duration: "workExperience.experience2.duration",
+    title: "workExperience.experience2.title",
     icon: "/assets/koyo.png",
     animation: "clapping",
   },
   {
     id: 3,
-    name: "Hirotec",
-    pos: "Inspection Engineer",
-    duration: "2019 - 2021",
-    title: "Conduct quality inspections of final product goods",
+    name: "workExperience.experience3.name",
+    pos: "workExperience.experience3.pos",
+    duration: "workExperience.experience3.duration",
+    title: "workExperience.experience3.title",
     icon: "/assets/hirotec.png",
     animation: "salute",
   },

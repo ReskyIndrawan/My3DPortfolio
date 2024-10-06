@@ -1,0 +1,102 @@
+{
+  "navbar": {
+    "logo": "Indrawan",
+    "home": "Beranda",
+    "about": "Tentang",
+    "work": "Pekerjaan",
+    "contact": "Kontak"
+  },
+  "hero": {
+    "welcome": "Halo, Saya Resky Indrawan",
+    "title": "Membangun Produk & Merek",
+    "button": "Mari Bekerja Sama"
+  },
+
+  "about": {
+    "grid1": {
+      "intro": "Halo, Saya Resky Indrawan",
+      "subIntro": "Dengan 3 tahun pengalaman sebagai pengembang web IT yang otodidak, saya telah mengasah keterampilan saya dalam pengembangan frontend dan backend, dengan fokus pada bahasa pemrograman Javascript menggunakan react.js atau next.js di frontend dan node.js di backend"
+    },
+    "grid2": {
+      "intro": "Tumpukan Teknologi",
+      "subIntro": "Saya mengkhususkan diri dalam Javascript/Typescript dengan fokus pada ekosistem React dan Next.js."
+    },
+    "grid3": {
+      "intro": "Saya dapat bekerja jarak jauh di sebagian besar zona waktu, dan khususnya bekerja di tempat di Jepang",
+      "subIntro": "Saya berbasis di Jepang, dengan ketersediaan kerja jarak jauh",
+      "button": "Hubungi Saya"
+    },
+    "grid4": {
+      "intro": "Hasrat Saya untuk Koding",
+      "subIntro": "Saya senang memecahkan masalah dan membangun sesuatu melalui kode. Koding bukan hanya profesi saya - itu adalah hasrat saya"
+    },
+    "grid5": {
+      "intro": "Hubungi Saya"
+    }
+  },
+  "myProject": {
+    "project1": {
+      "title": "Podcastr - Platform Podcast AI",
+      "desc": "Podcastr adalah platform Software-as-a-Service yang revolusioner yang mengubah cara podcast dibuat. Dengan fitur AI canggih seperti fungsi teks-ke-banyak-suara, memungkinkan pembuat untuk menghasilkan berbagai pengisi suara dari satu input teks.",
+      "subdesc": "Dibangun sebagai aplikasi Software-as-a-Service unik dengan Next.js 14, Tailwind CSS, TypeScript, Framer Motion, dan Convex, Podcastr dirancang untuk kinerja dan skalabilitas optimal."
+    },
+    "project2": {
+      "title": "LiveDoc - Klon Google Docs Real-Time",
+      "desc": "LiveDoc adalah aplikasi kolaboratif yang kuat yang meningkatkan kemampuan pengeditan dokumen real-time. Sebagai versi Google Docs yang disempurnakan, ini mendukung jutaan kolaborator secara bersamaan, memastikan setiap perubahan dicatat secara instan dan akurat.",
+      "subdesc": "Dengan LiveDoc, pengguna dapat merasakan masa depan kolaborasi, di mana banyak kontributor bekerja bersama secara real-time tanpa hambatan, menggunakan Next.js dan fitur terbaru dari Liveblocks."
+    },
+    "project3": {
+      "title": "CarePulse - Sistem Manajemen Kesehatan",
+      "desc": "Sebuah platform kesehatan inovatif yang dirancang untuk merampingkan proses medis yang penting. Ini menyederhanakan pendaftaran pasien, penjadwalan janji temu, dan manajemen rekam medis, memberikan pengalaman yang lancar bagi penyedia layanan kesehatan dan pasien.",
+      "subdesc": "Dengan fokus pada efisiensi, CarePulse mengintegrasikan formulir yang kompleks dan notifikasi SMS, menggunakan Next.js, Appwrite, Twillio, dan Sentry untuk meningkatkan alur kerja operasional."
+    },
+    "project4": {
+      "title": "Horizon - Platform Perbankan Online",
+      "desc": "Horizon adalah platform perbankan online yang komprehensif yang menawarkan pengguna dasbor manajemen keuangan terpusat. Ini memungkinkan pengguna untuk menghubungkan beberapa rekening bank, memantau transaksi real-time, dan mentransfer uang ke pengguna lain dengan lancar.",
+      "subdesc": "Dibangun dengan Next.js 14, Appwrite, Dwolla, dan Plaid, Horizon memastikan pengalaman perbankan yang mulus dan aman, yang disesuaikan untuk memenuhi kebutuhan konsumen modern."
+    },
+    "project5": {
+      "title": "Imaginify - Aplikasi Manipulasi Foto AI",
+      "desc": "Imaginify adalah aplikasi Software-as-a-Service yang inovatif yang memungkinkan pengguna untuk menciptakan manipulasi foto yang menakjubkan menggunakan teknologi AI. Dengan fitur seperti pengeditan gambar berbasis AI, sistem pembayaran, dan model berbasis kredit.",
+      "subdesc": "Dibangun dengan Next.js 14, Cloudinary AI, Clerk, dan Stripe, Imaginify menggabungkan teknologi mutakhir dengan pendekatan yang berpusat pada pengguna. Ini dapat diubah menjadi penghasilan tambahan atau bahkan bisnis penuh."
+    }
+  },
+  "workExperience": {
+    "title": "Pengalaman Kerja Saya",
+    "experience1": {
+      "name": "Staff Service Engineer",
+      "pos": "Pengembang Web IT",
+      "duration": "2024 - Sekarang",
+      "title": "Ditempatkan di perusahaan pelanggan untuk menyelesaikan masalah sebagai pengembang web IT."
+    },
+    "experience2": {
+      "name": "Koyosangyo",
+      "pos": "Insinyur Perlakuan Panas",
+      "duration": "2021 - 2024",
+      "title": "Melakukan proses perlakuan panas pada produk pelanggan sesuai kondisi yang ditentukan oleh kedua belah pihak."
+    },
+    "experience3": {
+      "name": "Hirotec",
+      "pos": "Insinyur Inspeksi",
+      "duration": "2019 - 2021",
+      "title": "Melakukan inspeksi kualitas pada produk akhir."
+    }
+  },
+  "contact": {
+    "title": "Mari Bicara",
+    "subTitle": "Apakah Anda ingin membangun situs web baru, meningkatkan platform yang sudah ada, atau membawa proyek unik menjadi kenyataan, saya siap membantu.",
+    "content": {
+      "fullName": "Nama Lengkap",
+      "email": "Alamat Email",
+      "message": "Pesan Anda",
+      "button": {
+        "sending": "Mengirim...",
+        "idle": "Kirim Pesan"
+      }
+    }
+  },
+  "alert": {
+    "200": "Terima kasih atas pesan Anda 😃",
+    "400": "Saya tidak menerima pesan Anda 😢"
+  }
+}

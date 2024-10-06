@@ -1,9 +1,11 @@
 import Globe from "react-globe.gl";
 import Button from "../components/Button";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
   const [hasCopied, setHasCopied] = useState(false);
+  const { t } = useTranslation();
   const handleCopy = () => {
     navigator.clipboard.writeText("indrawanresky.tlg@gmail.com");
     setHasCopied(true);
@@ -27,27 +29,11 @@ const About = () => {
             </div>
 
             <div>
-              <p className='grid-headtext'>Hi, I'm Resky Indrawan</p>
+              <p className='grid-headtext'>
+                {t("about.grid1.intro")}
+              </p>
               <p className='grid-subtext'>
-                With 3 year of experience IT web developer self
-                taught, I have honed my skills in frontend and backend
-                development, with focus programming language{" "}
-                <span className='font-semibold text-yellow-300 underline'>
-                  javascript
-                </span>{" "}
-                using{" "}
-                <span className='font-semibold text-blue-500 underline'>
-                  react.js
-                </span>{" "}
-                or{" "}
-                <span className='font-semibold text-white underline'>
-                  next.js
-                </span>{" "}
-                in front end and{" "}
-                <span className='font-semibold text-green-500 underline'>
-                  node.js
-                </span>{" "}
-                in backend
+                {t("about.grid1.subIntro")}
               </p>
             </div>
           </div>
@@ -61,10 +47,11 @@ const About = () => {
               className='w-full sm:h-[276px] h-fit object-contain'
             />
             <div>
-              <p className='grid-headtext'>Tech Stack</p>
+              <p className='grid-headtext'>
+                {t("about.grid2.intro")}
+              </p>
               <p className='grid-subtext'>
-                I specialize in Javascript/Typescript with a focus on
-                React and Next.Js ecosystem.
+                {t("about.grid2.subIntro")}
               </p>
             </div>
           </div>
@@ -96,15 +83,14 @@ const About = () => {
             </div>
             <div>
               <p className='grid-headtext'>
-                I can work remotely across most timezones, and
-                especially work on-site in Japan
+                {t("about.grid3.intro")}
               </p>
               <p className='grid-subtext'>
-                I'm based in Japan, with work remote available
+                {t("about.grid3.subIntro")}
               </p>
               <a href='#contact'>
                 <Button
-                  name='Contact Me'
+                  name={t("about.grid3.button")}
                   isBeam
                   containerClass='w-full mt-10'
                 />
@@ -120,11 +106,11 @@ const About = () => {
               className='w-full sm:h-[266px] h-fit object-contain'
             />
             <div>
-              <p className='grid-headtext'>My Passion for Coding</p>
+              <p className='grid-headtext'>
+                {t("about.grid4.intro")}
+              </p>
               <p className='grid-subtext'>
-                I love solving problems and building things through
-                code. Coding isn't just my profession - it is my
-                passion
+                {t("about.grid4.subIntro")}
               </p>
             </div>
           </div>
@@ -138,7 +124,9 @@ const About = () => {
               className='w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top'
             />
             <div className='space-y-2'>
-              <p className='grid-subtext text-center'>Contact Me</p>
+              <p className='grid-subtext text-center'>
+                {t("about.grid5.intro")}
+              </p>
               <div className='copy-container' onClick={handleCopy}>
                 <img
                   src={

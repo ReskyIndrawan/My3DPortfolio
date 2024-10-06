@@ -5,14 +5,16 @@ import { Suspense } from "react";
 import CanvasLoader from "../components/CanvasLoader";
 import Developer from "../components/Developer";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Experience = () => {
   const [animationName, setAnimationName] = useState("idle");
+  const { t } = useTranslation();
 
   return (
     <div className='c-space my-20' id='work'>
       <div className='w-full text-white-600'>
-        <h3 className='head-text'>My Work Experience</h3>
+        <h3 className='head-text'>{t("workExperience.title")}</h3>
         <div className='work-container'>
           <div className='work-canvas'>
             <Canvas>
@@ -73,13 +75,13 @@ const Experience = () => {
                     </div>
                     <div className='sm:p-5 px-2.5 py-5'>
                       <p className='font-bold text-white-800'>
-                        {name}
+                        {t(name)}
                       </p>
                       <p className='text-sm mb-5'>
-                        {pos} -- {duration}
+                        {t(pos)} -- {t(duration)}
                       </p>
                       <p className='group-hover:text-white transition ease-out duration-500'>
-                        {title}
+                        {t(title)}
                       </p>
                     </div>
                   </div>

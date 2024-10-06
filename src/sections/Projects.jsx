@@ -4,11 +4,14 @@ import { Suspense, useState } from "react";
 import { Center, OrbitControls } from "@react-three/drei";
 import CanvasLoader from "../components/CanvasLoader";
 import DemoComputer from "../components/DemoComputer";
+import { useTranslation } from "react-i18next";
 
 const projectCount = myProjects.length;
 
 const Projects = () => {
   const [selectProjectIndex, setSetselectProjectIndex] = useState(0);
+
+  const { t } = useTranslation();
 
   const currentProject = myProjects[selectProjectIndex];
 
@@ -45,10 +48,12 @@ const Projects = () => {
           </div>
           <div className='flex flex-col gap-5 text-white-600 my-5'>
             <p className='text-white text-2xl font-semibold animatedText'>
-              {currentProject.title}
+              {t(currentProject.title)}
             </p>
-            <p className='animated-text'>{currentProject.desc}</p>
-            <p className='animated-text'>{currentProject.subdesc}</p>
+            <p className='animated-text'>{t(currentProject.desc)}</p>
+            <p className='animated-text'>
+              {t(currentProject.subdesc)}
+            </p>
           </div>
           <div className='flex items-center justify-between flex-wrap gap-5'>
             <div className='flex items-center gap-3'>
